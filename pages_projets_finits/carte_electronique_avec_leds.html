@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>MES PROJETS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav arrondie">
+            <li><a href="../codes.html">CODES</a></li>
+            <li><a href="../index.html">PROJETS</a></li>
+            <li><a href="../logiciels.html">LOGICIELS</a></li>
+        </nav>
+    </header>
+
+    <div class="content">
+
+<h1 class="categorie">CARTE ELECTRONIQUE AVEC LEDS</h1>
+
+<pre>
+
+Ce projet fut réalisé en binôme dans le cadre d'un cours à l'INSA Toulouse.
+
+<h3>Photos Projet</h3>
+    <section class="img_projet">
+        <img src="../images/dessous_carte.jpg">
+        <img src="../images/dessus_carte.jpg">
+    </section>
+
+
+<h3>La carte est décomposable en 3 parties</h3>
+    • Alimentation/Puissance
+        Cette carte peut être alimentée via 3 piles AAA placé dans un holder ataché à la carte ou via un port USB C.
+        Un module de gestion de puissance est instalé pour l'alimentation des LEDS.
+
+    • LEDS
+        Elle comporte 16 LEDS qui sont contrôlables indépendaments (datasheet).
+        Entre celles-ci se trouvent des capa de découplages.
+
+    • Programation
+        Un STM32 (STM32F030F4P6TR) est installé sur la carte dont nous utilisons une des 15 pins pour envoyer les signaux pour les LEDS.
+        Le logiciel utilisé pour le codage est STM32 Cube IDE
+        On utilise un STM Link pour envoyer du code au STM32 via des points placés sur la carte
+        
+    <section class="img_projet">
+        <img src="../images/STM32_IDE.png">
+        <img src="../images/STM_LINK.png">
+    </section>
+
+
+Pour réaliser la carte nous avions une BOM (Bill of materials) à notre disposition.
+
+<h3>Réalisations</h3>
+    1 : Schématiques des différents composants.
+
+    2 : Footprints que nous avons pu vérifier grâce à des modèles 3D réalisés sous SolidWorks.
+
+    3 : Routage des différents composants.
+
+    4 : Assemblage la carte
+            4.1 : Pate à souder sur le dessus de la carte via masque puis plaçage des composants manuellement sauf pour le STM32 qui fut posé via machine de precision.
+            4.2 : Four à refusion.
+            4.3 : Soudure manuelle des composants pour le dessous de la carte.
+
+</pre>
+
+        </div>
+
+</body>
+</html>
